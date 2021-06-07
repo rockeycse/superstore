@@ -28,12 +28,10 @@ export default {
     Inventory,
   },
   data(){
-return {
-  items: []
-}
+
   },
   mounted() {
-   return this.items = data
+   console.log(data)
   },
 };
 </script>

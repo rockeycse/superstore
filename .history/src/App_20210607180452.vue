@@ -19,21 +19,13 @@
 import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
 import Inventory from "./components/Inventory";
-import data from "./data";
+import data from ''
 
 export default {
   components: {
     Navbar,
     Cart,
-    Inventory,
-  },
-  data(){
-return {
-  items: []
-}
-  },
-  mounted() {
-   return this.items = data
+    Inventory
   },
 };
 </script>

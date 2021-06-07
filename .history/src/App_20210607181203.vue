@@ -29,11 +29,11 @@ export default {
   },
   data(){
 return {
-  items: []
+  item
 }
   },
   mounted() {
-   return this.items = data
+   console.log(data)
   },
 };
 </script>

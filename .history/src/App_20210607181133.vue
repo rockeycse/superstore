@@ -27,13 +27,9 @@ export default {
     Cart,
     Inventory,
   },
-  data(){
-return {
-  items: []
-}
-  },
+  data
   mounted() {
-   return this.items = data
+   console.log(data)
   },
 };
 </script>

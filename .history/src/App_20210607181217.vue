@@ -33,7 +33,7 @@ return {
 }
   },
   mounted() {
-   return this.items = data
+   return this.
   },
 };
 </script>
