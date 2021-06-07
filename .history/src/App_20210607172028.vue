@@ -1,0 +1,33 @@
+<template>
+  <div id="app">
+    <navbar></navbar>
+
+    <div class="container pt-4">
+      <div class="row">
+        <inventory></inventory>
+        <div class="col-sm-3">
+          <ul class="list-group">
+            <li class="list-group-item">Item - price</li>
+            <li class="list-group-item">Item - price</li>
+            <li class="list-group-item">Item - price</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import Inventory from "./components/Inventory.vue";
+import Navbar from "./components/Navbar";
+
+export default {
+  components: {
+    Navbar,
+    Inventory,
+  },
+};
+</script>
+
+<style>
+</style>
