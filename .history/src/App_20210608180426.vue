@@ -30,7 +30,8 @@ export default {
   },
   data() {
     return {
-      items: data,
+      items: import data from "./data.js";
+,
     };
   },
   mounted() {

@@ -1,4 +1,4 @@
-const data = [{
+export default [{
         "id": 1,
         "title": "Cadillac",
         "photo": "error: Function 'formate' not found",
@@ -1204,4 +1204,3 @@ const data = [{
     "email": "cfrostdyke2r@indiegogo.com",
     "price": "$1.99"
 }]
-export default data;

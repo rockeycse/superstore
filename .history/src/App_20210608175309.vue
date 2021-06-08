@@ -19,9 +19,8 @@
 import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
 import Inventory from "./components/Inventory";
-import data from "./data.js";
+import sss from "./data.js";
 
-console.log("Console data "+data);
 export default {
   components: {
     Navbar,
@@ -30,12 +29,12 @@ export default {
   },
   data() {
     return {
-      items: data,
+      items: [],
     };
   },
   mounted() {
     console.log("Hello");
-    console.log("Console data "+data);
+    console.log("Console data "+sss);
     this.items = data;
   },
 };

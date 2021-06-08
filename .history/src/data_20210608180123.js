@@ -1,4 +1,5 @@
-const data = [{
+const
+default [{
         "id": 1,
         "title": "Cadillac",
         "photo": "error: Function 'formate' not found",

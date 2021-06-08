@@ -30,13 +30,13 @@ export default {
   },
   data() {
     return {
-      items: data,
+      items: [],
     };
   },
   mounted() {
     console.log("Hello");
     console.log("Console data "+data);
-    this.items = data;
+    this.items = test;
   },
 };
 </script>

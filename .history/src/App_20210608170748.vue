@@ -5,7 +5,7 @@
     <div class="container pt-4">
       <div class="row">
         <div class="col-sm-9">
-          <inventory :items="items"></inventory>
+          <inventory items="items"></inventory>
         </div>
         <div class="col-sm-3">
           <cart></cart>
@@ -19,9 +19,8 @@
 import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
 import Inventory from "./components/Inventory";
-import data from "./data.js";
+import data from "./data";
 
-console.log("Console data "+data);
 export default {
   components: {
     Navbar,
@@ -35,8 +34,8 @@ export default {
   },
   mounted() {
     console.log("Hello");
-    console.log("Console data "+data);
-    this.items = data;
+    console.log(data);
+    // this.items = data;
   },
 };
 </script>

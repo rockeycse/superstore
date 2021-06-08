@@ -21,7 +21,7 @@ import Cart from "./components/Cart";
 import Inventory from "./components/Inventory";
 import data from "./data.js";
 
-console.log("Console data "+data);
+console.log("Console data "+test);
 export default {
   components: {
     Navbar,
@@ -30,13 +30,13 @@ export default {
   },
   data() {
     return {
-      items: data,
+      items: [],
     };
   },
   mounted() {
     console.log("Hello");
-    console.log("Console data "+data);
-    this.items = data;
+    console.log("Console data "+test);
+    this.items = test;
   },
 };
 </script>

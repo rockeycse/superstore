@@ -19,24 +19,21 @@
 import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
 import Inventory from "./components/Inventory";
-import data from "./data.js";
+import data from "./data";
 
-console.log("Console data "+data);
 export default {
   components: {
     Navbar,
     Cart,
     Inventory,
   },
-  data() {
-    return {
-      items: data,
-    };
+  data(){
+return {
+  items: []
+}
   },
   mounted() {
-    console.log("Hello");
-    console.log("Console data "+data);
-    this.items = data;
+   return this.items = data
   },
 };
 </script>
