@@ -1,0 +1,29 @@
+<template lang="">
+          <div class="row">
+            <div v-for="(item, index) in items" :key="index" class="card m-1" style="width: 13rem">
+              <img :src="item.photo" class="card-img-top" alt="sorry" />
+              <div class="card-body">
+                <h5 class="card-title"> {{ item.title }} </h5>
+                <p class="card-text">
+                  {{ item.price | PriceRound }}
+                </p>
+                <a href="#" class="btn btn-primary">+ add</a>
+              </div>
+            </div>
+
+          </div>
+</template>
+<script>
+export default {
+  props: ['items'],
+  filters:{
+    PriceRound: function (value) {
+    if (!value) return ''
+    value = value.toString()
+    return Math.round()
+  }
+  }
+};
+</script>
+<style lang="">
+</style>
